@@ -4,6 +4,8 @@
   top: 0;
   left: 0;
   width: 100%;
+  padding-top: 22px;
+  z-index: 12;
 }
 .header .container .bars_menu {
   padding: 6px 9px;
@@ -13,20 +15,99 @@
   width: 71px;
   cursor: pointer;
 }
+@media (max-width: 556px) {
+  .header .container .bars_menu {
+    width: 61px;
+  }
+}
 .header .container .bars_menu span {
+  display: block;
   width: 51px;
   height: 3px;
+  background: #FFF;
 }
-.header .mobile_menu {
-  display: none;
+@media (max-width: 556px) {
+  .header .container .bars_menu span {
+    width: 41px;
+  }
+}
+.header .container .menu_content {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding-top: 125px;
+  background: rgba(255, 255, 255, 0.6235294118);
+  backdrop-filter: blur(10px);
+  height: 100vh;
+  z-index: 2;
+}
+.header .container .menu_content a {
+  color: #2F2F2F;
+  font-family: "Rubik Mono One";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%;
 }
 .header .logo {
+  position: relative;
   gap: 12.7px;
 }
+@media (max-width: 556px) {
+  .header .logo_1 {
+    width: 100px;
+  }
+}
+.header .logo_2 {
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 556px) {
+  .header .logo_2 {
+    width: 90px;
+  }
+}
+.header .logo .shadow {
+  position: absolute;
+  left: 0;
+  top: -27px;
+}
+@media (max-width: 556px) {
+  .header .logo .shadow {
+    width: 100%;
+    left: 24%;
+    top: -19px;
+  }
+}
+@media (max-width: 556px) {
+  .header .logo .shadow img {
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
 .hero {
-  background: url("../images/hero_img.png") no-repeat center;
+  background: url("../images/hero_bg.png") no-repeat center;
   background-size: cover;
-  padding-top: 182px;
+  padding-top: 52px;
+}
+@media (max-width: 556px) {
+  .hero .container {
+    flex-direction: column;
+  }
+}
+.hero_info {
+  padding-top: 52px;
+  width: 50%;
+}
+@media (max-width: 556px) {
+  .hero_info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }
 .hero_info h1 {
   color: #FFF;
@@ -38,7 +119,125 @@
   letter-spacing: -5.25px;
   text-transform: uppercase;
 }
+@media (max-width: 1200px) {
+  .hero_info h1 {
+    font-size: 80px;
+  }
+}
+@media (max-width: 992px) {
+  .hero_info h1 {
+    line-height: 91%;
+    font-size: 76px;
+  }
+}
+@media (max-width: 768px) {
+  .hero_info h1 {
+    line-height: 91%;
+    font-size: 44px;
+    letter-spacing: -1px;
+  }
+}
+@media (max-width: 556px) {
+  .hero_info h1 {
+    font-size: 35px;
+    text-align: center;
+    letter-spacing: normal;
+    line-height: normal;
+  }
+}
+.hero_info .button {
+  display: inline-block;
+  margin-top: 29px;
+}
+@media (max-width: 768px) {
+  .hero_info .button {
+    padding: 29.5px 26px;
+    border-radius: 15px;
+  }
+}
+@media (max-width: 556px) {
+  .hero_info .button {
+    margin-top: 20px;
+  }
+}
+.hero_img {
+  width: 50%;
+  position: relative;
+  bottom: -3px;
+}
+@media (max-width: 556px) {
+  .hero_img {
+    width: 100%;
+    bottom: -5px;
+  }
+}
+.hero_img .news {
+  position: absolute;
+  bottom: 54px;
+  left: 198px;
+  white-space: nowrap;
+  color: #FFF;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: #FEA500;
+  font-family: "Road Rage(RUS BY LYAJKA)";
+  font-size: 97.6px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 97.6px */
+  letter-spacing: -4.88px;
+  text-transform: uppercase;
+  transform: rotate(-4.5deg);
+}
+@media (max-width: 1200px) {
+  .hero_img .news {
+    left: 136px;
+    font-size: 69px;
+  }
+}
+@media (max-width: 992px) {
+  .hero_img .news {
+    transform: rotate(-3.5deg);
+    font-size: 59px;
+  }
+}
+@media (max-width: 556px) {
+  .hero_img .news {
+    left: 20%;
+    bottom: 34px;
+    font-size: 42px;
+    -webkit-text-stroke-width: 2px;
+  }
+}
+.hero_img img {
+  position: relative;
+  left: -85px;
+}
+@media (max-width: 1200px) {
+  .hero_img img {
+    width: 850px;
+  }
+}
+@media (max-width: 992px) {
+  .hero_img img {
+    width: 600px;
+    left: -30px;
+  }
+}
+@media (max-width: 768px) {
+  .hero_img img {
+    width: 474px;
+    left: -30px;
+  }
+}
 
+@font-face {
+  font-family: "Proxima Nova";
+  src: url(../fonts/proxima/proximanova_regular.ttf);
+}
+@font-face {
+  font-family: "Road Rage(RUS BY LYAJKA)";
+  src: url(../fonts/RoadRage/roadrage.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -46,7 +245,7 @@
 }
 
 .wrapper {
-  overflow: unset;
+  overflow: hidden;
 }
 
 body {
@@ -98,12 +297,14 @@ li {
 }
 
 .section_title {
-  color: #050E25;
-  font-family: "Tilda Sans";
-  font-size: 80px;
+  color: #2F2F2F;
+  font-family: "Rubik One";
+  font-size: 52px;
   font-style: normal;
-  font-weight: 900;
-  line-height: 90%;
+  font-weight: 400;
+  line-height: 89%; /* 46.28px */
+  letter-spacing: -2.6px;
+  text-transform: uppercase;
 }
 @media (max-width: 1120px) {
   .section_title {
@@ -119,8 +320,9 @@ li {
 .container {
   max-width: 1290px;
   margin: 0 auto;
+  padding: 0 10px;
 }
-@media (max-width: 1120px) {
+@media (max-width: 992px) {
   .container {
     max-width: 768px;
   }
