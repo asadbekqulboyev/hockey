@@ -230,6 +230,12 @@
   }
 }
 
+.video_about {
+  background: url("../images/about_video_bg.png") no-repeat center;
+  background-size: cover;
+  padding: 94px 0 114px;
+}
+
 @font-face {
   font-family: "Proxima Nova";
   src: url(../fonts/proxima/proximanova_regular.ttf);
@@ -302,7 +308,8 @@ li {
   font-size: 52px;
   font-style: normal;
   font-weight: 400;
-  line-height: 89%; /* 46.28px */
+  line-height: 89%;
+  text-align: center;
   letter-spacing: -2.6px;
   text-transform: uppercase;
 }

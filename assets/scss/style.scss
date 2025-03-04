@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Moon+Dance&family=Rubik+Mono+One&display=swap');
 @import 'header';
 @import 'hero';
+@import 'about';
 // fonts
 @font-face {
     font-family: 'Proxima Nova';
@@ -67,7 +68,8 @@ li{
     font-size: 52px;
     font-style: normal;
     font-weight: 400;
-    line-height: 89%; /* 46.28px */
+    line-height: 89%; 
+    text-align: center;
     letter-spacing: -2.6px;
     text-transform: uppercase;
 @media (max-width:1120px) {
