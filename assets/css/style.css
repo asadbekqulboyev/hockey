@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Moon+Dance&family=Rubik+Mono+One&display=swap");
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.header .container .bars_menu {
+  padding: 6px 9px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.29);
+  gap: 10px;
+  width: 71px;
+  cursor: pointer;
+}
+.header .container .bars_menu span {
+  width: 51px;
+  height: 3px;
+}
+.header .mobile_menu {
+  display: none;
+}
+.header .logo {
+  gap: 12.7px;
+}
+.hero {
+  background: url("../images/hero_img.png") no-repeat center;
+  background-size: cover;
+  padding-top: 182px;
+}
+.hero_info h1 {
+  color: #FFF;
+  font-family: "Rubik One";
+  font-size: 105px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 89%; /* 93.45px */
+  letter-spacing: -5.25px;
+  text-transform: uppercase;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  overflow: unset;
+}
+
+body {
+  color: #686868;
+  font-family: "Proxima Nova";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120.3%;
+}
+
+.title {
+  color: #2F2F2F;
+  font-family: "Rubik Mono One";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 135%; /* 21.6px */
+}
+
+.button {
+  cursor: pointer;
+  color: #50390D;
+  text-align: center;
+  font-family: "Proxima Nova";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 100%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 20px;
+  background: #FEA500;
+  box-shadow: 0px 4px 14.4px 0px rgba(0, 0, 0, 0.29), 0px -4px 8.2px 0px rgba(255, 255, 255, 0.57) inset;
+  padding: 38.5px 78px;
+}
+.button.midle {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 800;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.section_title {
+  color: #050E25;
+  font-family: "Tilda Sans";
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 90%;
+}
+@media (max-width: 1120px) {
+  .section_title {
+    font-size: 54px;
+  }
+}
+@media (max-width: 556px) {
+  .section_title {
+    font-size: 44px;
+  }
+}
+
+.container {
+  max-width: 1290px;
+  margin: 0 auto;
+}
+@media (max-width: 1120px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 556px;
+  }
+}
+
+.flex {
+  display: flex;
+}
+.flex.between {
+  justify-content: space-between;
+}
+.flex.center {
+  justify-content: center;
+}
+.flex.end {
+  justify-content: flex-end;
+}
+.flex.start {
+  justify-content: flex-start;
+}
+.flex.column {
+  flex-direction: column;
+}
+.flex.a_center {
+  align-items: center;
+}
+.flex.a_start {
+  align-items: flex-start;
+}
+.flex.a_end {
+  align-items: flex-end;
+}
+.flex.wrap {
+  flex-wrap: wrap;
+}/*# sourceMappingURL=style.css.map */

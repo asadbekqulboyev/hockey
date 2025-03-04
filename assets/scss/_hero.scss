@@ -1,0 +1,18 @@
+.hero{
+    background: url('../images/hero_img.png') no-repeat center;
+    background-size: cover;
+    padding-top: 182px;
+    &_info{
+        h1{
+            color: #FFF;
+            font-family: "Rubik One";
+            font-size: 105px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 89%; /* 93.45px */
+            letter-spacing: -5.25px;
+            text-transform: uppercase;
+            
+        }
+    }
+}
