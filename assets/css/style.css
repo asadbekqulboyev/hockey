@@ -232,8 +232,195 @@
 
 .video_about {
   background: url("../images/about_video_bg.png") no-repeat center;
+  background-position: center top;
   background-size: cover;
   padding: 94px 0 114px;
+}
+@media (max-width: 556px) {
+  .video_about {
+    padding: 31px 0 61px;
+  }
+}
+.video_about .container {
+  gap: 34px;
+}
+.video_about .container .video img {
+  object-fit: contain;
+  width: 100%;
+}
+
+.progress {
+  background: url("../images/bg_info.png") no-repeat top center;
+  background-size: cover;
+}
+.progress .container {
+  position: relative;
+}
+.progress .title_big {
+  color: #1EAFE1;
+  font-family: "Road Rage(RUS BY LYAJKA)";
+  font-size: 117.181px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 20px;
+}
+.progress_top {
+  padding-top: 102px;
+}
+.progress_top .progress_top_items {
+  gap: 20px;
+  width: calc(70% - 20px);
+}
+.progress_top .progress_top_items li {
+  width: calc(25% - 14.5px);
+  gap: 14px;
+}
+.progress_top .progress_top_items li .progeress_item_top {
+  position: relative;
+  z-index: 2;
+  gap: 39px;
+}
+.progress_top .progress_top_items li .progeress_item_top .progress_img {
+  height: 193px;
+  text-align: center;
+}
+.progress_top .progress_top_items li .progeress_item_top .progress_img > img:first-child {
+  transform: translateY(-28px);
+  position: relative;
+  z-index: 2;
+}
+.progress_top .progress_top_items li .progeress_item_top .progress_img > img:last-child {
+  position: absolute;
+  top: -20%;
+  left: -15%;
+}
+.progress_top .progress_top_items li .progeress_item_top .progress_number {
+  color: #FEA500;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.progress_top .progress_top_items li .progress_bottom {
+  gap: 6px;
+  position: relative;
+  z-index: 2;
+}
+.progress_top .progress_top_items li .progress_bottom .progres_logo {
+  border-radius: 50%;
+  border: 1px solid #FFF;
+  background: #000;
+  width: 37px;
+  height: 37px;
+}
+.progress_top .progress_top_items li .progress_bottom .date {
+  color: #C1C1C1;
+  font-family: "Proxima Nova";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+}
+.progress_top .progress_top_items li .progress_bottom .progress_author {
+  color: #FFF;
+  font-family: "Rubik One";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.progress_top .progress_name {
+  color: #FEA500;
+  font-family: "Road Rage(RUS BY LYAJKA)";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 109%;
+  letter-spacing: -1.6px;
+  text-transform: uppercase;
+  width: 100%;
+  max-width: 348px;
+}
+.progress_top .progress_name a {
+  color: #FFF;
+  font-family: "Proxima Nova";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 89%;
+  letter-spacing: -1.2px;
+  text-transform: lowercase;
+}
+.progress_top .progress_name > span {
+  color: #FFF;
+  font-family: "Rubik One";
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: -3px;
+  text-transform: capitalize;
+}
+.progress_top .progress_name > span:last-child {
+  padding-left: 100px;
+}
+.progress_lists {
+  gap: 9px;
+}
+.progress_lists .progress_list_item {
+  border-radius: 18px;
+  border: 1px solid #FEA500;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(2px);
+  padding: 8.5px 13px 8.5px 20px;
+  gap: 30px;
+}
+.progress_lists .progress_list_item p {
+  color: #EAEAEA;
+  font-family: "Proxima Nova";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.progress_lists .progress_list_item p span {
+  color: #FEA500;
+}
+
+.foto {
+  padding: 97px 0 100px;
+}
+.foto .foto_items {
+  gap: 30px 0;
+  margin-top: 40px;
+}
+@media (max-width: 768px) {
+  .foto .foto_items {
+    gap: 10px 0;
+  }
+}
+.foto .foto_item {
+  width: calc(25% - 15px);
+}
+@media (max-width: 768px) {
+  .foto .foto_item {
+    width: calc(50% - 15px);
+  }
+}
+@media (max-width: 556px) {
+  .foto .foto_item {
+    width: calc(50% - 5px);
+  }
+}
+.foto .foto_item img {
+  object-fit: contain;
+  width: 100%;
 }
 
 @font-face {
@@ -261,6 +448,7 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 120.3%;
+  background: #F0F6F8;
 }
 
 .title {
@@ -320,7 +508,8 @@ li {
 }
 @media (max-width: 556px) {
   .section_title {
-    font-size: 44px;
+    font-size: 34px;
+    font-weight: 300;
   }
 }
 

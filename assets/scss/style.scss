@@ -2,11 +2,14 @@
 @import 'header';
 @import 'hero';
 @import 'about';
+@import 'progress';
+@import 'foto';
 // fonts
 @font-face {
     font-family: 'Proxima Nova';
     src: url(../fonts/proxima/proximanova_regular.ttf);
 }
+
 @font-face {
     font-family: 'Road Rage(RUS BY LYAJKA)';
     src: url(../fonts/RoadRage/roadrage.ttf);
@@ -27,6 +30,7 @@ font-size: 14px;
 font-style: normal;
 font-weight: 400;
 line-height: 120.3%;
+background: #F0F6F8;
 }
 .title{
 color: #2F2F2F;
@@ -76,7 +80,8 @@ li{
     font-size: 54px;
 }
 @media (max-width:556px) {
-    font-size: 44px;
+    font-size: 34px;
+    font-weight: 300;
 }
 }
 .container{
