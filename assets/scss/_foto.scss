@@ -1,5 +1,8 @@
 .foto{
     padding: 97px 0 100px;
+    @media (max-width:768px) {
+        padding: 45px 0 50px;
+    }
     .foto_items{
         gap: 30px 0;
         margin-top: 40px;

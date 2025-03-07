@@ -1,0 +1,49 @@
+.faq{
+    &_items{
+        padding-top:40px;
+        gap: 6px;
+        padding-bottom: 42px;
+    }
+    &_description{
+        margin-top: 20px;
+        display: none;
+    }
+    &_item{
+        padding: 17px 17px 17px 20px;
+        border-radius: 13px;
+        background: #FFF;
+        &:first-child{
+            .faq_description{
+                display: block;
+            }
+        }
+    }
+    &_header{
+        color: #2F2F2F;
+        font-family: "Rubik One";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        @media (max-width:556px) {
+            font-size: 10px;
+            gap: 20px;
+            font-weight: 100;
+        }
+        .accordion_icon {
+            width: 28px;
+            height: 28px;
+            background-color: #ffa500;
+            color: #fff;
+            font-size: 18px;
+            flex:0 0 auto;
+            font-weight: 400;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+    }
+    
+}

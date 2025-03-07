@@ -1,3 +1,42 @@
-.participants{
-    
+.participants {
+    padding-top: 147px;
+    @media (max-width:768px) {
+       padding-top: 45px;
+    }
+    .participants_slide {
+        border-radius: 20px;
+        background: #FFF;
+        margin-top: 40px;
+        padding: 35px;
+        @media (max-width:768px) {
+            padding: 25px;
+        }
+        .slide_card{
+            width: 100%;
+            gap: 14px;
+            img{
+                width: 100%;
+                object-fit: contain;
+                border-radius: 14px;
+            }
+            
+        }
+        
+    }
+    .slide_btnlists{
+        gap: 48px;
+        margin-top: 30px;
+    .btn{
+        border-radius: 8px;
+        background: #C73634;
+        width: 45px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &.prev{
+            transform: rotate(-180deg);
+        }
+    }
+    }
 }

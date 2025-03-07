@@ -809,7 +809,7 @@
 @media (max-width: 556px) {
   .programm_info .button_content .button {
     font-size: 14px;
-    padding: 25px 40px;
+    padding: 23px 28px;
     border-radius: 10px;
   }
 }
@@ -1112,6 +1112,12 @@
     width: fit-content;
   }
 }
+@media (max-width: 556px) {
+  .details_img a {
+    padding: 25px 28px;
+    width: 100%;
+  }
+}
 
 .offer .section_title {
   padding-bottom: 44px;
@@ -1376,6 +1382,14 @@
   font-style: normal;
   font-weight: 400;
   line-height: 135%;
+  background: url(../images/systemg_bg.png) no-repeat center;
+  background-size: cover;
+  padding-bottom: 173px;
+}
+@media (max-width: 768px) {
+  .system {
+    padding-bottom: 50px;
+  }
 }
 .system .section_title {
   line-height: 100%;
@@ -1387,11 +1401,22 @@
 .system .system_content {
   padding-top: 40px;
 }
+@media (max-width: 992px) {
+  .system .system_content {
+    flex-direction: column;
+  }
+}
 .system .system_items {
   width: calc(75% - 16px);
   gap: 28px 0;
   position: relative;
   z-index: 2;
+}
+@media (max-width: 992px) {
+  .system .system_items {
+    width: 100%;
+    gap: 18px;
+  }
 }
 .system .system_item {
   padding: 0 17px 17px 12px;
@@ -1399,6 +1424,16 @@
   background: #FFF;
   width: calc(33.33% - 15px);
   position: relative;
+}
+@media (max-width: 768px) {
+  .system .system_item {
+    width: calc(50% - 10px);
+  }
+}
+@media (max-width: 768px) {
+  .system .system_item {
+    width: 100%;
+  }
 }
 .system .system_item .system_number {
   color: #C73634;
@@ -1411,11 +1446,21 @@
   right: 19px;
   top: 17px;
 }
+@media (max-width: 992px) {
+  .system .system_item .system_item_title {
+    font-size: 14px;
+  }
+}
 .system .system_img {
   width: calc(25% - 15px);
   position: relative;
   margin-top: auto;
   margin-bottom: 0;
+}
+@media (max-width: 992px) {
+  .system .system_img {
+    width: 100%;
+  }
 }
 .system .system_img > img {
   border-bottom: 4px solid #005674;
@@ -1423,9 +1468,22 @@
   bottom: -38px;
   right: -50px;
 }
+@media (max-width: 992px) {
+  .system .system_img > img {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+  }
+}
 .system .system_img .system_btn {
   position: relative;
   z-index: 2;
+}
+@media (max-width: 556px) {
+  .system .system_img .system_btn img {
+    width: 54px;
+  }
 }
 .system .system_img .system_btn .button {
   width: 100%;
@@ -1433,6 +1491,61 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 800;
+}
+@media (max-width: 992px) {
+  .system .system_img .system_btn .button {
+    width: fit-content;
+  }
+}
+@media (max-width: 556px) {
+  .system .system_img .system_btn .button {
+    width: 100%;
+  }
+}
+
+.participants {
+  padding-top: 147px;
+}
+@media (max-width: 768px) {
+  .participants {
+    padding-top: 45px;
+  }
+}
+.participants .participants_slide {
+  border-radius: 20px;
+  background: #FFF;
+  margin-top: 40px;
+  padding: 35px;
+}
+@media (max-width: 768px) {
+  .participants .participants_slide {
+    padding: 25px;
+  }
+}
+.participants .participants_slide .slide_card {
+  width: 100%;
+  gap: 14px;
+}
+.participants .participants_slide .slide_card img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 14px;
+}
+.participants .slide_btnlists {
+  gap: 48px;
+  margin-top: 30px;
+}
+.participants .slide_btnlists .btn {
+  border-radius: 8px;
+  background: #C73634;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.participants .slide_btnlists .btn.prev {
+  transform: rotate(-180deg);
 }
 
 .comments_items {
@@ -1514,6 +1627,11 @@
 .foto {
   padding: 97px 0 100px;
 }
+@media (max-width: 768px) {
+  .foto {
+    padding: 45px 0 50px;
+  }
+}
 .foto .foto_items {
   gap: 30px 0;
   margin-top: 40px;
@@ -1539,6 +1657,53 @@
 .foto .foto_item img {
   object-fit: contain;
   width: 100%;
+}
+
+.faq_items {
+  padding-top: 40px;
+  gap: 6px;
+  padding-bottom: 42px;
+}
+.faq_description {
+  margin-top: 20px;
+  display: none;
+}
+.faq_item {
+  padding: 17px 17px 17px 20px;
+  border-radius: 13px;
+  background: #FFF;
+}
+.faq_item:first-child .faq_description {
+  display: block;
+}
+.faq_header {
+  color: #2F2F2F;
+  font-family: "Rubik One";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+@media (max-width: 556px) {
+  .faq_header {
+    font-size: 10px;
+    gap: 20px;
+    font-weight: 100;
+  }
+}
+.faq_header .accordion_icon {
+  width: 28px;
+  height: 28px;
+  background-color: #ffa500;
+  color: #fff;
+  font-size: 18px;
+  flex: 0 0 auto;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
 }
 
 .footer {

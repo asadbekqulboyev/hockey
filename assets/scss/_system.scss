@@ -5,7 +5,14 @@ font-size: 16px;
 font-style: normal;
 font-weight: 400;
 line-height: 135%;
+background: url(../images/systemg_bg.png) no-repeat center;
+background-size: cover;
+padding-bottom: 173px;
+@media (max-width:768px) {
+   padding-bottom: 50px;
+}
 .section_title{
+
     line-height: 100%;
     span{
         display: block;
@@ -14,12 +21,19 @@ line-height: 135%;
 }
 .system_content {
     padding-top: 40px;
+    @media (max-width:992px) {
+        flex-direction: column;
+    }
 }
 .system_items{
     width: calc(75% - 16px);
     gap: 28px 0;
     position: relative;
     z-index: 2;
+    @media (max-width:992px) {
+        width: 100%;
+        gap: 18px;
+    }
 }
 .system_item{
     padding: 0 17px 17px 12px;
@@ -27,6 +41,12 @@ line-height: 135%;
     background: #FFF;
     width: calc(33.33% - 15px);
     position: relative;
+    @media (max-width:768px) {
+        width: calc(50% - 10px);
+    }
+    @media (max-width:768px) {
+        width: 100%;
+    }
     .system_number{
         color: #C73634;
         font-family: "Rubik One";
@@ -38,27 +58,52 @@ line-height: 135%;
         right: 19px;
         top: 17px;
     }
+    .system_item_title{
+        @media (max-width:992px) {
+            font-size: 14px;
+        }
+    }
 }
 .system_img{
     width: calc(25% - 15px);
     position: relative;
     margin-top: auto;
     margin-bottom: 0;
+    @media (max-width:992px) {
+        width: 100%;
+    }
     &>img{
         border-bottom: 4px solid #005674;
         position: absolute;
         bottom: -38px;
         right:-50px;
+        @media (max-width:992px) {
+            position: relative;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+        }
     }
     .system_btn{
         position: relative;
         z-index: 2;
+        img{
+            @media (max-width:556px) {
+                width: 54px;
+            }
+        }
         .button{
             width: 100%;
             padding: 32px 20px;
             font-size: 16px;
             font-style: normal;
             font-weight: 800;
+            @media (max-width:992px) {
+                width: fit-content;
+            }
+            @media (max-width:556px) {
+                width: 100%;
+            }
         }
     }
 }
