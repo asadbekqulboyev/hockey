@@ -1,0 +1,102 @@
+.tarifs{
+    background: url(../images/bg_tarifs.png) no-repeat center;
+    background-size:100% 100%;
+    padding-top: 100px;
+    padding-bottom: 170px;
+    @media (max-width:1180px) {
+        background-size:200% 100%;
+    }
+    @media (max-width:768px) {
+        background-size: cover;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    &_items{
+        margin-top: 54px;
+        @media (max-width:1180px) {
+            flex-wrap: wrap;
+        }
+        @media (max-width:768px) {
+            margin-top: 25px;
+        }
+        
+    }
+    &_item{
+        border: 6px solid rgba(255, 255, 255, 0.33) ;
+        border-radius: 26.941px;
+        background: #03ABBF;
+        backdrop-filter: blur(29.93405532836914px);
+        padding: 28px 15px 15px;
+        justify-content: space-between;
+        align-items: center;
+        gap: 41px;
+        width: calc(20% - 5.5px);
+        @media (max-width:1180px) {
+            width: calc(33.33% - 5.5px);
+        }
+        @media (max-width:768px) {
+            width: calc(50% - 5.5px);
+        }
+        @media (max-width:556px) {
+            width: 100%;
+        }
+        .tarif_title {
+            color: #FFF;
+            text-align: center;
+            font-family: "Rubik One";
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            padding: 0 19px;
+            width: fit-content;
+            padding-top: 23px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid; 
+            border-image: linear-gradient(90deg, #005674 0%, #FFF 50%, #005674 100%);
+            border-image-slice: 1;
+           
+        }
+        ul{
+            padding-top: 15px;
+            gap: 2px;
+            li{
+                color: #FFF;
+                font-family: "Proxima Nova";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                gap: 7px;
+            }
+        }
+        .tarifs_bottom{
+            .price_old{
+                color: #BBB;
+                text-align: center;
+                font-family: "Proxima Nova";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 800;
+                line-height: 100%;
+                letter-spacing: 1.6px;
+            }
+            .price_new{
+                color: #FFF;
+                text-align: center;
+                font-family: "Rubik One";
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                padding-top: 7px;
+            }
+            .button{
+                width: 100%;
+                margin-top: 14px;
+                display: block;
+            }
+        }
+    }
+
+}

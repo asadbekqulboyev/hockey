@@ -1,0 +1,135 @@
+.offer {
+    .section_title {
+        padding-bottom: 44px;
+        @media (max-width:992px) {
+            letter-spacing: normal;
+            padding-bottom: 22px;
+        }
+    }
+    .offer_content{
+        @media (max-width:992px) {
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+    .offer_slide {
+        width: calc(50% - 15px);
+        position: relative;
+        height: fit-content;
+        @media (max-width:992px) {
+           width: 100%;
+        }
+        .swiper-slide {
+
+            img {
+                border-radius: 13px;
+                width: 100%;
+                object-fit: contain;
+            }
+
+        }
+        .slide_btns {
+            position: absolute;
+            top: 0px;
+            bottom: 0;
+            margin: auto 0;
+            z-index: 2;
+            height: 100%;
+            align-items: center;
+            width: calc(100% - 34px);
+            left: 17px;
+
+        }
+        .btn {
+            cursor: pointer;
+            border-radius: 4px;
+            background: rgba(255, 255, 255, 0.79);
+            backdrop-filter: blur(2px);
+            width: 41px;
+            height: 41px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            user-select: none;
+            &.prev{
+                transform: rotate(-180deg);
+            }
+        }
+    }
+
+    .offer_info {
+        width: calc(50% - 15px);
+        margin-top: 20px;
+        @media (max-width:992px) {
+            width: 100%;
+         }
+        .offer_title {
+            color: #C73634;
+            font-family: "Rubik One";
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 89%;
+            letter-spacing: -1.4px;
+            text-transform: uppercase;
+            @media (max-width:768px) {
+                font-size: 24px;
+            }
+            &.dark {
+                color: #2F2F2F;
+                margin-top: 20px;
+            }
+        }
+        .offer_description {
+            color: #686868;
+            margin-top: 13px;
+            b{
+                display: block;
+                color: #2F2F2F;
+            }
+        }
+        .offer_items{
+            margin-top: 35px;
+            gap: 17px 0;
+            @media (max-width:992px) {
+                gap: 8px 0;
+            }
+        }
+        .offer_item {
+            width: calc(50% - 15px);
+            @media (max-width:992px) {
+                width: calc(50% - 4px);
+            }
+            .feature_title {
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                color:#2F2F2F;
+                font-family: "Rubik One";
+                padding-top: 10px;
+                @media (max-width:992px) {
+                    font-size: 14px;
+                }
+            }
+            .feature_text{
+                text-transform: lowercase;
+                @media (max-width:992px) {
+                    font-size: 12px;
+                }
+            }
+
+            
+        }
+    }
+    &.offer2{
+        padding-top: 120px;
+        @media (max-width:992px) {
+            padding-top: 50px;
+        }
+        .offer_content{
+            @media (max-width:992px) {
+                flex-direction: column-reverse;
+            }
+        }
+    }
+}

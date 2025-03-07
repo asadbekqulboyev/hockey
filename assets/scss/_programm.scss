@@ -1,0 +1,97 @@
+.programm{
+    background: url(../images/programm.png) no-repeat center;
+    background-size: 100% 100% ;
+    .section_title{
+        text-align: left;
+    }
+    &_content{
+        @media (max-width:992px) {
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+    &_info{
+        padding-top: 35px;
+        width: 60%;
+        @media (max-width:992px) {
+            width: 100%;
+        }
+        .button_content{
+            margin-top: 62px;
+            @media (max-width:556px) {
+                margin-top: 20px;
+            }
+            .button{
+                @media (max-width:992px) {
+                    padding: 29px 48px;
+                }
+                @media (max-width:556px) {
+                    font-size: 14px;
+                    padding: 25px 40px;
+                    border-radius: 10px;
+                }
+            }
+            img{
+                @media (max-width:992px) {
+                    width: 70px;
+                }
+                @media (max-width:556px) {
+                    width:60px;
+                }
+            }
+        }
+    }
+    &_items{
+        gap: 15px 0;
+    }
+    &_item{
+        width:50%;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        @media (max-width:992px) {
+            width:calc(50% - 10px);
+        }
+        @media (max-width:556px) {
+            width:calc(50% - 5px);
+        }
+        .programm_number{
+            color: #C73634;
+            font-family: "Rubik One";
+            font-size: 52px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 89%;
+            letter-spacing: -2.6px;
+            text-transform: uppercase;
+            height: 28%;
+            overflow: hidden;
+        }
+        .programm_title{
+            color: #2F2F2F;
+            font-family: "Rubik One";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 114%; 
+            text-transform: uppercase;
+            @media (max-width:556px) {
+                font-size: 14px;
+            }
+        }
+    }
+    &_img{
+        line-height: 0;
+        width: 60%;
+        @media (max-width:992px) {
+            width: 100%;
+        }
+        img{
+        width: 100%;
+        object-fit: contain;
+
+        }
+    }
+
+
+}

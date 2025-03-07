@@ -1,0 +1,67 @@
+.advantages{
+    padding-top: 80px;
+    @media (max-width:556px) {
+        padding-top: 40px;
+    }
+    .container{
+        max-width: 1290px;
+        position: relative;
+        .hockey_stick{
+            position: absolute;
+            bottom: -231px;
+            left: -200px;
+            @media (max-width:556px) {
+               width: 200px;
+               left: -80px;
+               bottom: -130px;
+            }
+        }
+    }
+    &_items{
+        margin-top: 45px;
+        gap: 30px 0;
+        @media (max-width:992px) {
+            gap: 10px 0;
+        }
+        @media (max-width:556px) {
+            margin-top: 25px;
+        }
+    }
+    &_item{
+        width: calc(33.33% - 15px);
+        padding: 21px 16px;
+        border-radius: 10px;
+        background: #FFF;
+        @media (max-width:992px) {
+            width: calc(33.33% - 8px);
+            padding: 18px 12px;
+        }
+        @media (max-width:768px) {
+            width: calc(50% - 8px);
+        }
+        @media (max-width:556px) {
+            width: 100%;
+        }
+        .item_top{
+            gap: 10px;
+            .item_title{
+                color:#2F2F2F;
+                font-family: "Rubik One";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 103%;
+                text-transform: uppercase;
+                @media (max-width:992px) {
+                    font-size: 14px;
+                }
+                @media (max-width:768px) {
+                    font-size: 12px;
+                }
+            }
+        }
+        p{
+            padding-top: 17px;
+        }
+    }
+}

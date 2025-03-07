@@ -1,0 +1,63 @@
+.improvement{
+    padding: 0 20px;
+    @media (max-width:556px) {
+        padding:0 10px;
+    }
+    .container{
+        border-radius: 13px;
+        background: #1DBED2;
+        padding: 78px 72px 87px 42px;
+        box-shadow: 0px 20px 20px #00000034;
+        .section_title{
+            @media (max-width:768px) {
+                letter-spacing: normal;
+                font-size: 28px;
+            }
+        }
+        @media (max-width:768px) {
+            padding:28px 20px;
+        }
+        @media (max-width:556px) {
+            padding:25px 15px;
+        }
+        
+    }
+    &_list{
+        gap: 57px 0;
+        margin-top: 53px;
+        @media (max-width:1200px) {
+            gap: 25px 0;
+        }
+        @media (max-width:768px) {
+            margin-top: 20px;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+    &_item{
+        color: #FFF;
+        font-family: "Rubik One";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 135%;
+        width: calc(50% - 30px);
+        gap: 26px;
+        @media (max-width:1200px) {
+            width: calc(50% - 15px);
+            gap: 16px;
+        }
+        @media (max-width:768px) {
+            width: 100%;
+            font-size: 14px;
+            gap: 13px;
+            font-weight: 0;
+        }
+        img{
+            width: 52px;
+            @media (max-width:768px) {
+                width: 34px;
+            }
+        }
+    }
+}

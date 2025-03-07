@@ -1,5 +1,6 @@
 
     $(document).ready(function() {
+        // vide 
         $('.video').magnificPopup({
             type: 'iframe',
             iframe: {
@@ -14,6 +15,21 @@
                     }
                 }
             }
+        });
+        // slide
+        const swiper = new Swiper(".offer_slide", {
+            spaceBetween:20,
+            navigation: {
+                nextEl: ".offer_slide .next",
+                prevEl: ".offer_slide .prev",
+            },
+        });
+        const swiper2 = new Swiper(".participants_slide", {
+            spaceBetween:20,
+            navigation: {
+                nextEl: ".participants .next",
+                prevEl: ".participants .prev",
+            },
         });
     });  
 

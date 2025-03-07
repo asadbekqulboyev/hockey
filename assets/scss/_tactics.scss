@@ -1,0 +1,61 @@
+.tactics{
+    background: url(../images/pricelists.png) no-repeat top center;
+    background-size: 100% 100%;
+    padding-top: 108px;
+    padding-bottom: 160px;
+    margin-top: 54px;
+    @media (max-width:768px) {
+        mpt: 30px;
+        padding-top: 34px;
+        background-size:800% 109%;
+        padding-bottom: 30px;
+    }
+    &_lists{
+        margin-top: 44px;
+        @media (max-width:992px) {
+            flex-wrap: wrap;
+            gap: 20px 0;
+        }
+        .tactics_item{
+            background:url(../images/price_item.png) no-repeat center;
+            background-size: 100% 100%;
+            border-radius: 13px;
+            padding: 34px 15px 32px 16px ;
+            width: calc(25% - 15px);
+
+            @media (max-width:1182px) {
+                width: calc(25% - 8px); 
+            }
+            @media (max-width:992px) {
+                width: calc(50% - 8px);
+            }
+            @media (max-width:556px) {
+                width:100%;
+            }
+            .price_img{
+                text-align: center;
+            }
+            .title{
+                text-align: center;
+                text-transform: uppercase;
+                letter-spacing: -0.2px;
+                padding-top: 24px;
+                padding-bottom:14px;
+                line-height: 103%; 
+                font-family: 'Rubik One';
+                @media (max-width:1182px) {
+                    font-size: 14px;
+                }
+            }
+            .price_text{
+                padding-bottom: 3px;
+            }
+            .tactics_itemlist{
+                gap: 3px;       
+                li{
+                    gap: 8px;
+                }
+            }
+        }
+    }
+}

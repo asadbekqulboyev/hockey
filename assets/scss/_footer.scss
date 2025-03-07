@@ -1,0 +1,91 @@
+.footer{
+    background: url(../images/form_bg.png) no-repeat center;
+    background-size: 100% 100%;
+    padding-top: 90px;
+    padding-bottom: 129px;
+    @media (max-width:992px) {
+        background-size:cover;
+    }
+    .section_title{
+      color: #FFF;
+      @media (max-width:992px) {
+        letter-spacing: normal;
+      }
+    }
+    &_form{
+        border-radius: 13px;
+        background: rgba(0, 86, 116, 0.75);
+        backdrop-filter: blur(7.550000190734863px);
+        max-width: 910px;
+        margin: 0 auto;
+        margin-top: 45px;
+        padding: 52px 64px 60px;
+        @media (max-width:992px) {
+            padding: 32px 34px 40px;  
+        }
+        @media (max-width:768px) {
+            padding: 25px 20px 33px;
+        }
+        label{
+            gap: 14px;
+        }
+        span{
+            color: #FFF;
+            font-family: "Proxima Nova";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 89%; 
+            letter-spacing: -0.8px;
+            padding-left: 22px;
+
+        }
+        input,textarea{
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.80);
+            padding: 16px 19px;
+            outline: 0;
+            border: 0;
+            color: #81C0D5;
+            font-family: "Proxima Nova";
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 400;
+        }
+        textarea{
+            min-height: 193px;
+            @media (max-width:768px) {
+                min-height: 120px;
+            }
+        }
+        .form_inputs{
+            gap: 18px;
+
+        }
+    }
+    .form_bottom{
+        gap: 24px;
+        margin-top: 53px;
+        @media (max-width:992px) {
+            margin-top: 25px;
+        }
+        
+        .button{
+            width: fit-content;
+            margin: 0 auto;
+            border: 0;
+            outline: 0;
+            @media (max-width:556px) {
+                padding: 30px 55px;
+            }
+        }
+        p{
+            color: #FFF;
+            text-align: center;
+            font-family: "Proxima Nova";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+        }
+    }
+}

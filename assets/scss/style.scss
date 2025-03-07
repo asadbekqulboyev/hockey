@@ -3,7 +3,17 @@
 @import 'hero';
 @import 'about';
 @import 'progress';
+@import 'advantages';
+@import 'tactics';
+@import 'programm';
+@import 'improvement';
+@import 'details';
+@import 'offer';
+@import 'tarifs';
+@import 'system';
+@import 'comments';
 @import 'foto';
+@import 'footer';
 // fonts
 @font-face {
     font-family: 'Proxima Nova';
@@ -60,6 +70,11 @@ line-height: 135%; /* 21.6px */
         font-size: 16px;
         font-style: normal;
         font-weight: 800;
+        padding: 26px 30px;
+        border-radius: 13px;    }
+    &.red{
+        background: #C73634;
+        color: #fff;
     }
 }
 a{text-decoration: none;}
@@ -79,8 +94,11 @@ li{
 @media (max-width:1120px) {
     font-size: 54px;
 }
+@media (max-width:768px) {
+    font-size:34;
+}
 @media (max-width:556px) {
-    font-size: 34px;
+    font-size: 26px;
     font-weight: 300;
 }
 }
