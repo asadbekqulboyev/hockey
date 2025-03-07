@@ -3,6 +3,7 @@
     background-size:100% 100%;
     padding-top: 100px;
     padding-bottom: 170px;
+    position: relative;
     @media (max-width:1180px) {
         background-size:200% 100%;
     }
@@ -11,7 +12,19 @@
         padding-top: 50px;
         padding-bottom: 50px;
     }
+    .hockey_stick{
+        position: absolute;
+        bottom: -12%;
+        right: 0;
+        z-index: 1;
+        @media (max-width:768px) {
+            width: 300px;
+            bottom: 0;
+        }
+    }
     &_items{
+        position: relative;
+        z-index: 2;
         margin-top: 54px;
         @media (max-width:1180px) {
             flex-wrap: wrap;

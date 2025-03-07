@@ -614,6 +614,8 @@
 
 .advantages {
   padding-top: 80px;
+  position: relative;
+  z-index: 2;
 }
 @media (max-width: 556px) {
   .advantages {
@@ -1268,6 +1270,7 @@
   background-size: 100% 100%;
   padding-top: 100px;
   padding-bottom: 170px;
+  position: relative;
 }
 @media (max-width: 1180px) {
   .tarifs {
@@ -1281,7 +1284,21 @@
     padding-bottom: 50px;
   }
 }
+.tarifs .hockey_stick {
+  position: absolute;
+  bottom: -12%;
+  right: 0;
+  z-index: 1;
+}
+@media (max-width: 768px) {
+  .tarifs .hockey_stick {
+    width: 300px;
+    bottom: 0;
+  }
+}
 .tarifs_items {
+  position: relative;
+  z-index: 2;
   margin-top: 54px;
 }
 @media (max-width: 1180px) {

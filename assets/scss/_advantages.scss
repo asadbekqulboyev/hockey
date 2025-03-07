@@ -1,5 +1,7 @@
 .advantages{
     padding-top: 80px;
+    position: relative;
+    z-index: 2;
     @media (max-width:556px) {
         padding-top: 40px;
     }
