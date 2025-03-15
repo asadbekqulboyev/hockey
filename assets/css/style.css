@@ -1560,6 +1560,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .participants .slide_btnlists .btn.prev {
   transform: rotate(-180deg);
