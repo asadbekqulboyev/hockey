@@ -1561,6 +1561,11 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: all 0.2s linear;
+  user-select: none;
+}
+.participants .slide_btnlists .btn:hover {
+  opacity: 0.83;
 }
 .participants .slide_btnlists .btn.prev {
   transform: rotate(-180deg);
@@ -1630,6 +1635,11 @@
   justify-content: center;
   gap: 6px;
   padding: 7px 40px;
+  transition: all 0.2s linear;
+}
+.comments_item a:hover {
+  opacity: 0.95;
+  transform: scale(0.96);
 }
 .comments_item a span {
   color: #FFF;
@@ -1700,6 +1710,7 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
+  cursor: pointer;
 }
 @media (max-width: 556px) {
   .faq_header {
@@ -1879,6 +1890,11 @@ body {
   background: #FEA500;
   box-shadow: 0px 4px 14.4px 0px rgba(0, 0, 0, 0.29), 0px -4px 8.2px 0px rgba(255, 255, 255, 0.57) inset;
   padding: 38.5px 78px;
+  transition: all 0.2s linear;
+}
+.button:hover {
+  opacity: 0.99;
+  transform: scale(0.96);
 }
 .button.midle {
   font-size: 16px;

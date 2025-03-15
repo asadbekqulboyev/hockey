@@ -68,6 +68,11 @@ line-height: 135%; /* 21.6px */
     background: #FEA500;
     box-shadow: 0px 4px 14.4px 0px rgba(0, 0, 0, 0.29), 0px -4px 8.2px 0px rgba(255, 255, 255, 0.57) inset;
     padding: 38.5px 78px;
+    transition: all .2s linear;
+    &:hover{
+        opacity:.99 ;
+        transform: scale(.96);
+    }
     &.midle{
         font-size: 16px;
         font-style: normal;

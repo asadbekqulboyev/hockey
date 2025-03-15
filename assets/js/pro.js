@@ -52,7 +52,7 @@
           gsap.from($(this), {
             opacity: 0,
             y: 90,
-            duration: 0.5,
+            duration: 0.5, 
             scrollTrigger: {
               trigger: this,
               start: "top 100%",
@@ -60,5 +60,11 @@
             }
           });
         });
+        // gallery
+        $('[data-fancybox="gallery"]').fancybox({
+          loop: true, // Galereya aylanishi uchun
+          buttons: ["zoom", "slideShow", "fullScreen", "download", "thumbs", "close"]
+      });
+  
     });  
 
