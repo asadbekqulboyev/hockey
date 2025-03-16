@@ -64,6 +64,10 @@
         }
         p{
             padding-top: 17px;
+            @media (max-width:768px) {
+                font-size: 16px;
+                color: #2F2F2F;
+            }
         }
     }
 }

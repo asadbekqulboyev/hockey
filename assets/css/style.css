@@ -92,6 +92,12 @@
   background-size: cover;
   padding-top: 52px;
 }
+@media (max-width: 768px) {
+  .hero {
+    background: url(../images/hero_bg.png) no-repeat right center;
+    background-size: 400% 100%;
+  }
+}
 @media (max-width: 556px) {
   .hero .container {
     flex-direction: column;
@@ -115,7 +121,7 @@
   font-size: 105px;
   font-style: normal;
   font-weight: 400;
-  line-height: 89%; /* 93.45px */
+  line-height: 89%;
   letter-spacing: -5.25px;
   text-transform: uppercase;
 }
@@ -177,8 +183,6 @@
   left: 198px;
   white-space: nowrap;
   color: #FFF;
-  -webkit-text-stroke-width: 4px;
-  -webkit-text-stroke-color: #FEA500;
   font-family: "Road Rage(RUS BY LYAJKA)";
   font-size: 97.6px;
   font-style: normal;
@@ -187,6 +191,16 @@
   letter-spacing: -4.88px;
   text-transform: uppercase;
   transform: rotate(-4.5deg);
+  color: #FFF;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #FEA500;
+  font-family: "Road Rage(RUS BY LYAJKA)";
+  font-size: 97.6px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 97.6px */
+  letter-spacing: -4.88px;
+  text-transform: uppercase;
 }
 @media (max-width: 1200px) {
   .hero_img .news {
@@ -551,7 +565,9 @@
 }
 @media (max-width: 768px) {
   .progress_lists .progress_list_item p {
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
   }
 }
 .progress_lists .progress_list_item p span {
@@ -698,6 +714,12 @@
 }
 .advantages_item p {
   padding-top: 17px;
+}
+@media (max-width: 768px) {
+  .advantages_item p {
+    font-size: 16px;
+    color: #2F2F2F;
+  }
 }
 
 .tactics {
@@ -1696,6 +1718,12 @@
   margin-top: 20px;
   display: none;
 }
+@media (max-width: 768px) {
+  .faq_description {
+    font-size: 16px;
+    color: #2F2F2F;
+  }
+}
 .faq_item {
   padding: 17px 17px 17px 20px;
   border-radius: 13px;
@@ -1714,7 +1742,7 @@
 }
 @media (max-width: 556px) {
   .faq_header {
-    font-size: 10px;
+    font-size: 12px;
     gap: 20px;
     font-weight: 100;
   }
