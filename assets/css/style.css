@@ -688,7 +688,7 @@
 }
 @media (max-width: 768px) {
   .tactics {
-    mpt: 30px;
+    margin-top: 30px;
     padding-top: 34px;
     background-size: 800% 109%;
     padding-bottom: 30px;
