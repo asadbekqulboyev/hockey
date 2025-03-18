@@ -2,6 +2,7 @@
     background: url('../images/hero_bg.png') no-repeat center;
     background-size: cover;
     padding-top: 52px;
+    overflow: hidden;
     @media (max-width:768px) {
         background: url(../images/hero_bg.png) no-repeat right center;
         background-size: 400% 100%;
@@ -70,50 +71,50 @@
         width: 100%;
         bottom: -5px;
     }
-        .news{
-            position: absolute;
-            bottom: 54px;
-            left: 198px;
-            white-space: nowrap;
-            color: #FFF;
-         
-            font-family: "Road Rage(RUS BY LYAJKA)";
-            font-size: 97.6px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 100%; /* 97.6px */
-            letter-spacing: -4.88px;
-            text-transform: uppercase;
-            transform: rotate(-4.5deg);
-            color: #FFF;
--webkit-text-stroke-width: 2px;
--webkit-text-stroke-color: #FEA500;
-font-family: "Road Rage(RUS BY LYAJKA)";
-font-size: 97.6px;
-font-style: normal;
-font-weight: 400;
-line-height: 100%; /* 97.6px */
-letter-spacing: -4.88px;
-text-transform: uppercase;
-            @media (max-width:1200px) {
-                left: 136px;
-                font-size: 69px;
-            }
-            @media (max-width:992px) {
-                transform: rotate(-3.5deg);
-                font-size: 59px;
+        // .news{
+        //     position: absolute;
+        //     bottom: 54px;
+        //     left: 198px;
+        //     white-space: nowrap;
+        //     color: #FFF;
+        //     font-family: "Road Rage(RUS BY LYAJKA)";
+        //     font-size: 97.6px;
+        //     font-style: normal;
+        //     font-weight: 400;
+        //     line-height: 100%;
+        //     letter-spacing: -4.88px;
+        //     text-transform: uppercase;
+        //     transform: rotate(-4.5deg);
+        //     color: #FFF;
+        //     -webkit-text-stroke-width: 2px;
+        //     -webkit-text-stroke-color: #FEA500;
+        //     font-family: "Road Rage(RUS BY LYAJKA)";
+        //     font-size: 97.6px;
+        //     font-style: normal;
+        //     font-weight: 400;
+        //     line-height: 100%; 
+        //     letter-spacing: -4.88px;
+        //     text-transform: uppercase;
+        //     @media (max-width:1200px) {
+        //         left: 136px;
+        //         font-size: 69px;
+        //     }
+        //     @media (max-width:992px) {
+        //         transform: rotate(-3.5deg);
+        //         font-size: 59px;
                 
-            }
-            @media (max-width:556px) {
-                left: 20%;
-                bottom:34px;
-                font-size: 42px;
-                -webkit-text-stroke-width: 2px;
-            }
-        }
+        //     }
+        //     @media (max-width:556px) {
+        //         left: 20%;
+        //         bottom:34px;
+        //         font-size: 42px;
+        //         -webkit-text-stroke-width: 2px;
+        //     }
+        // }
         img{
             position: relative;
-            left: -85px;
+            left: -53px;
+    bottom: -2px;
             @media (max-width:1200px) {
                 width: 850px;
             }

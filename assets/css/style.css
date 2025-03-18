@@ -91,6 +91,7 @@
   background: url("../images/hero_bg.png") no-repeat center;
   background-size: cover;
   padding-top: 52px;
+  overflow: hidden;
 }
 @media (max-width: 768px) {
   .hero {
@@ -121,7 +122,7 @@
   font-size: 105px;
   font-style: normal;
   font-weight: 400;
-  line-height: 89%; /* 93.45px */
+  line-height: 89%;
   letter-spacing: -5.25px;
   text-transform: uppercase;
 }
@@ -177,46 +178,10 @@
     bottom: -5px;
   }
 }
-.hero_img .news {
-  position: absolute;
-  bottom: 54px;
-  left: 198px;
-  white-space: nowrap;
-  color: #FFF;
-  -webkit-text-stroke-width: 4px;
-  -webkit-text-stroke-color: #FEA500;
-  font-family: "Road Rage(RUS BY LYAJKA)";
-  font-size: 97.6px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 100%; /* 97.6px */
-  letter-spacing: -4.88px;
-  text-transform: uppercase;
-  transform: rotate(-4.5deg);
-}
-@media (max-width: 1200px) {
-  .hero_img .news {
-    left: 136px;
-    font-size: 69px;
-  }
-}
-@media (max-width: 992px) {
-  .hero_img .news {
-    transform: rotate(-3.5deg);
-    font-size: 59px;
-  }
-}
-@media (max-width: 556px) {
-  .hero_img .news {
-    left: 20%;
-    bottom: 34px;
-    font-size: 42px;
-    -webkit-text-stroke-width: 2px;
-  }
-}
 .hero_img img {
   position: relative;
-  left: -85px;
+  left: -53px;
+  bottom: -2px;
 }
 @media (max-width: 1200px) {
   .hero_img img {
@@ -710,6 +675,7 @@
 @media (max-width: 768px) {
   .advantages_item p {
     font-size: 16px;
+    color: #2F2F2F;
   }
 }
 
@@ -722,7 +688,7 @@
 }
 @media (max-width: 768px) {
   .tactics {
-    margin-top: 30px;
+    mpt: 30px;
     padding-top: 34px;
     background-size: 800% 109%;
     padding-bottom: 30px;
@@ -1709,6 +1675,12 @@
   margin-top: 20px;
   display: none;
 }
+@media (max-width: 768px) {
+  .faq_description {
+    font-size: 16px;
+    color: #2F2F2F;
+  }
+}
 .faq_item {
   padding: 17px 17px 17px 20px;
   border-radius: 13px;
@@ -1727,7 +1699,7 @@
 }
 @media (max-width: 556px) {
   .faq_header {
-    font-size: 10px;
+    font-size: 12px;
     gap: 20px;
     font-weight: 100;
   }
